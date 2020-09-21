@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Guess Number Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <style>
+      body {
+          background: url("./img/F2qRmLhRnmebc8jJAUjr_GuessTheNumber@3x.png") no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          /* background-image: url("./img/F2qRmLhRnmebc8jJAUjr_GuessTheNumber@3x.png"); */
+      }
+      .container{
+          margin: 40px 20%;
+          font-size: 40px;
+          color: white;
+          width: 800px;
+      }
+      .user-input{
+          margin: 10px  20%;
+      }
+
+      #number {
+          height: 35px;
+          margin-right: 15px;
+          width: 250px;
+      }
+      #submit {
+          width: 65px;
+          height: 35px;
+          background-color: rebeccapurple;
+          color: white;
+          font-size: 16px;
+      }
+
+      #lowerupper {
+          margin-top: 20px;
+          margin-left: 20%;
+          font-size: 25px;
+          color: darkmagenta;
+
+      }
+      #tryingtimes {
+        margin-top: 20px;
+        margin-left: 20%;
+        font-size: 25px;
+        color: darkmagenta;
+
+      }
+
+      @media screen and (max-width: 900px){
+        #offer {
+            width: 300px;
+            margin-bottom: 0px;
+        }
+        .user-input{
+          margin-left: 0%;
+          margin-top: 0px;
+        }
+
+        #number {
+          height: 38px;
+          margin-right: 15px;
+          width: 250px;
+        }
+
+        #lowerupper {
+          margin-top: 20px;
+          margin-left: 0%;
+          font-size: 25px;
+          color: darkmagenta;
+
+        }
+        #tryingtimes {
+        margin-top: 20px;
+        margin-left: 0%;
+        font-size: 25px;
+        color: darkmagenta;
+
+      }
+
+      }
+        
+    
+  </style>
+</head>
+<body>
+
+<div class="container ">
+    <p id="offer" >Find The Number (beetwen 0 and 100):</p>
+        <div class="user-input ">
+            <input type="number"  name="number" id="number">
+            <button type="submit"  value="Send" id="submit">Check</button>
+        </div>
+        <div class="info-back">
+            <p id="lowerupper"></p>
+            <p id="tryingtimes"></p>
+        </div>
+ 
+</div>
+
+<script src="myScript.js"></script>
+</body>
+</html>
