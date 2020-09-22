@@ -1,5 +1,5 @@
-let  first= Math.floor((Math.random() * 100) + 1);
-let times_try = 1;
+var  first= Math.floor((Math.random() * 100) + 1);
+var times_try = 1;
 document.getElementById("submit").addEventListener("click",
 function () {
     
@@ -7,10 +7,11 @@ function () {
     let guess_num = parseInt(second_num);
     if (first === guess_num) {
         document.getElementById("lowerupper").innerHTML =`You are the Winner...`;
-        alert(`You are the Winner:D. You guest after ${times_try-1}`);     
-        
-        // document.getElementById("tryingtimes").innerHTML =`You have tried ${times_try} times..`;
-        // times_try += 1;
+        alert(`You are the Winner:D. You guest after ${times_try-1}`); 
+        alert("Do you wanna play again!");
+        document.getElementById('number').value=""; 
+        first= Math.floor((Math.random() * 100) + 1);
+        times_try = 1;
     } else if (first > guess_num) {
       
         document.getElementById("lowerupper").innerHTML =`I am thinking about higher number`;
