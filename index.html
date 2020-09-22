@@ -7,19 +7,29 @@
   
   <style>
       body {
-          background: url("./img/F2qRmLhRnmebc8jJAUjr_GuessTheNumber@3x.png") no-repeat;
-          background-attachment: fixed;
+          background-image: url("./img/F2qRmLhRnmebc8jJAUjr_GuessTheNumber@3x.png");
           background-size: cover;
-          /* background-image: url("./img/F2qRmLhRnmebc8jJAUjr_GuessTheNumber@3x.png"); */
+          background-repeat: no-repeat;     
+          background-size: cover;
+          overflow: hidden;
+          
+          
       }
       .container{
-          margin: 40px 20%;
+          margin: 0 20% ;
           font-size: 40px;
           color: white;
-          width: 800px;
+          width: 80%;
+          height: 100vh;
+          overflow-y: hidden;
+          
+      }
+      #offer {
+        /* margin-top: 30px; */
+        margin-left: 10%;
       }
       .user-input{
-          margin: 10px  20%;
+          margin: 0px  20%;
       }
 
       #number {
@@ -50,14 +60,22 @@
 
       }
 
-      @media screen and (max-width: 900px){
+      @media screen and (max-width: 1000px){
+        .container{
+          margin: 20px 5%;
+          font-size: 40px;
+          color: white;
+          width: 80%;
+          
+      }
         #offer {
-            width: 300px;
+            width: 500px;
             margin-bottom: 0px;
+            margin-left: 0;
         }
         .user-input{
           margin-left: 0%;
-          margin-top: 0px;
+          margin-top: 0;
         }
 
         #number {
@@ -67,7 +85,7 @@
         }
 
         #lowerupper {
-          margin-top: 20px;
+          margin-top: 50%;
           margin-left: 0%;
           font-size: 25px;
           color: darkmagenta;
@@ -80,7 +98,63 @@
         color: darkmagenta;
 
       }
+      #submit {
+          width: 65px;
+          height: 35px;
+          background-color: rebeccapurple;
+          color: white;
+          font-size: 16px;
+          margin-left: 30%;
+      }
 
+      }
+      @media screen and (max-width: 376px){
+        .container{
+          margin: 10px 5%;
+          font-size: 40px;
+          color: white;
+          width: 90%;
+          
+      }
+        #offer {
+            width: 200px;
+            margin-bottom: 0px;
+            font-size: 25px;
+        }
+        .user-input{
+          margin-left: 0%;
+          margin-top: 0px;
+        }
+
+        #number {
+          height: 28px;
+          margin-right: 5px;
+          width: 130px;
+        }
+
+        #lowerupper {
+          margin-top: 5px;
+          margin-left: 0%;
+          font-size: 25px;
+          color: darkmagenta;
+          width: 250px;
+
+        }
+        #tryingtimes {
+        margin-top: 70%;
+        margin-left: 0%;
+        font-size: 25px;
+        color: darkmagenta;
+
+        }
+        #submit {
+          width: 60px;
+          padding: 5px;
+          height: 35px;
+          background-color: rebeccapurple;
+          color: white;
+          font-size: 15px;
+      }
       }
         
     
@@ -90,14 +164,14 @@
 
 <div class="container ">
     <p id="offer" >Find The Number (beetwen 0 and 100):</p>
-        <div class="user-input ">
-            <input type="number"  name="number" id="number">
-            <button type="submit"  value="Send" id="submit">Check</button>
-        </div>
-        <div class="info-back">
-            <p id="lowerupper"></p>
-            <p id="tryingtimes"></p>
-        </div>
+    <div class="user-input ">
+        <input type="number"  name="number" id="number">
+        <button type="submit"  value="Send" id="submit">Check</button>
+    </div>
+    <div class="info-back">
+        <p id="lowerupper"></p>
+        <p id="tryingtimes"></p>
+    </div>
  
 </div>
 
